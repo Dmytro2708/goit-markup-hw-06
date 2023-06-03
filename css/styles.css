@@ -826,6 +826,7 @@ body {
   width: 100%;
   height: 40px;
   padding-left: 38px;
+  outline: transparent;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -876,7 +877,7 @@ body {
 }
 
 .modal-comment:focus {
-  outline: none;
+  outline: transparent;
   border-color: var(--color-brand);
 }
 
@@ -927,12 +928,11 @@ body {
   margin-right: 8px;
   fill: transparent;
 
-  transition: ackground-color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic),
+  border 250ms var(--cubic),
+  fill 250ms var(--cubic);
 }
 
-.checkbox-icon {
-  fill: var(--main-background-color);
-}
 
 .modal-input-checkbox:checked +.modal-label-checkbox > .modal-fake-checkbox {
   background-color: var(--color-activ);
