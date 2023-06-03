@@ -648,12 +648,11 @@ body {
 }
 
 .footer-container-subscribe {
-
   margin-left: 80px;
 }
 
-.footer-subscribe-text{
-   color: var(--main-background-color);
+.footer-subscribe-text {
+  color: var(--main-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -662,8 +661,8 @@ body {
 }
 
 .footer-subscribe-form {
-   display: flex;
-     gap: 24px;
+  display: flex;
+  gap: 24px;
   justify-content: center;
   align-items: flex-end;
 }
@@ -682,14 +681,13 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.footer-subscribe-input::placeholder{
+.footer-subscribe-input::placeholder {
   color: var(--main-background-color);
 }
 
-
 .subscribe-btn {
   display: flex;
-    justify-content: center;
+  justify-content: center;
   align-items: center;
   min-width: 165px;
   height: 40px;
@@ -704,7 +702,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding: 8px 24px;
-
 
   transition: background-color 250ms var(--cubic);
 }
@@ -807,23 +804,22 @@ body {
   height: 100%;
 }
 
-
-
 .modal-label-field {
-  position: relative;
-  width: 100%;
   margin-bottom: 8px;
+  width: 100%;
 }
 
-.modal-input-desc {
+.modal-label {
   display: block;
-  font-weight: 400;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-
   color: #8e8f99;
-  margin-bottom: 4px;
+}
+
+.modal-input-field {
+  position: relative;
 }
 
 .modal-input {
@@ -845,8 +841,9 @@ body {
 
 .modal-icon {
   position: absolute;
+  top: 50%;
   left: 16px;
-  bottom: 8px;
+  transform: translateY(-50%);
   fill: var(--secondary-color);
 
   transition: fill 250ms var(--cubic);
@@ -856,29 +853,24 @@ body {
   fill: var(--color-brand);
 }
 
-.modal-label-comment {
+.modal-comment-field {
+  margin-bottom: 16px;
   width: 100%;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
 }
 
 .modal-comment {
   width: 100%;
   height: 120px;
-  padding: 10px 16px;
-  margin-top: 4px;
-  margin-bottom: 16px;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   resize: none;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
   background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
 
   transition: border-color 250ms var(--cubic);
 }
@@ -892,6 +884,9 @@ body {
   color: rgba(46, 47, 66, 0.4);
 }
 
+
+
+
 .modal-checkbox {
   display: flex;
   align-items: center;
@@ -903,7 +898,7 @@ body {
   color: #8e8f99;
 }
 
-.modal-label-checkbox{
+.modal-label-checkbox {
   display: flex;
   align-items: center;
 }
