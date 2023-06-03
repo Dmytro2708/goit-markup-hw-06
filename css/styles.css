@@ -835,7 +835,7 @@ body {
 }
 
 .modal-input:focus {
-  outline: none;
+  outline: transparent;
   border-color: var(--color-brand);
 }
 
@@ -888,6 +888,7 @@ body {
 
 
 .modal-checkbox {
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -915,7 +916,7 @@ body {
 }
 
 .modal-fake-checkbox {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -924,20 +925,24 @@ body {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  fill: transparent;
+
+  transition: ackground-color 250ms var(--cubic);
 }
 
 .checkbox-icon {
   fill: var(--main-background-color);
 }
 
-.modal-input-checkbox:checked + .modal-label-checkbox > .modal-fake-checkbox {
-  background-color: var(--color-brand);
+.modal-input-checkbox:checked +.modal-label-checkbox > .modal-fake-checkbox {
+  background-color: var(--color-activ);
+  border: none;
+  fill:var(--main-background-color);
 }
 
 .modal-btn {
-  width: 169px;
+  min-width: 169px;
   padding: 16px 32px;
-  margin-top: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
