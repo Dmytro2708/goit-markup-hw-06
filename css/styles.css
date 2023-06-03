@@ -668,10 +668,6 @@ body {
   align-items: flex-end;
 }
 
-.footer-subscribe-label{
-
-}
-
 .footer-subscribe-input {
   width: 264px;
   height: 40px;
@@ -695,7 +691,7 @@ body {
   display: flex;
     justify-content: center;
   align-items: center;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   color: var(--main-background-color);
   background-color: var(--color-brand);
@@ -791,15 +787,6 @@ body {
   transition: fill 250ms var(--cubic);
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
 .modal-form-text {
   font-weight: 500;
   font-size: 16px;
@@ -810,6 +797,17 @@ body {
   color: var(--secondary-color);
   margin-bottom: 16px;
 }
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .modal-label-field {
   position: relative;
